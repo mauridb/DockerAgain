@@ -1,0 +1,20 @@
+DOCKER:
+- https://github.com/docker/compose/releases
+- https://github.com/docker/machine/releases
+
+commands:
+Docker info
+$ docker version
+$ docker info
+#####################
+$ docker container run --publish 8080:80 nginx
+$ docker container run --publish 8080:80 --detach nginx
+$ docker container ls
+$ docker container ls -a
+$ docker container stop <CONTAINERID>
+$ docker container run --publish 8080:80 --detach --name <YOURCONTAINERNAME> nginx
+$ docker container logs <CONTAINERNAME>
+$ docker container top <CONTAINERNAME>
+$ docker container rm <CONTAINERNID>
+$ docker container rm -f <CONTAINERID>
+

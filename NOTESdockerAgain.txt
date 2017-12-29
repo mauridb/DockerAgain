@@ -17,4 +17,38 @@ $ docker container logs <CONTAINERNAME>
 $ docker container top <CONTAINERNAME>
 $ docker container rm <CONTAINERNID>
 $ docker container rm -f <CONTAINERID>
+$ docker container run -d -p <PORT:PORT> --name <CONTAINERNAME> -e VAR=value mysql
+$ docker container top <CONTAINERNAME>
+$ docker container stats
+$ docker container inspect <CONTAINERNAME>
+$ docker container run -it <CONTAINERNAME> <COMMAND>
+$ docker container exec -it <CONTAINERNAME> <COMMAND>
+$ docker container port <CONTAINERNAME>
+$ docker network ls
+$ docker network inspect <NETWORKNAME>
+$ docker network create <NETWORKNAME> 
+$ docker network connect <NETWORKNAME> <CONTAINERNAME>
+$ docker netwokr disconnect <NETWORKNAME> <CONTAINERNAME>
+$ docker container run -it --rm <IMAGENAME>
+$ docker image history <IMAGENAME>
+$ docker image inspect <IMAGENAME>
+$ docker image tag <IMAGENAME> <DOCKERREGISTRYNAME/IMAGENAME>
+$ docker login
+$ docker push mauridb/mycontainer:latest
+$ docker run -p 80:300 --rm mycontainer
+$ docker image build -t <NEWIMAGE> <DOCKERFILEPATH>
+$ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql/ mysql
 
+
+
+
+
+
+
+
+
+
+PS: 
+- mysql server root passwordieGoo6IexeeceoLon4deiwiul9EKe5Ae
+- alpine 4MB size image Linux
+- DNS, namespacing is amazing
